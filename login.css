@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgba(0, 0, 90, 1);
+  color: #fff;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.name-content {
+  margin-right: 7rem;
+}
+
+.name-content .logo {
+  font-size: 5rem;
+  color: #1877f2;
+}
+
+.name-content p {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+
+@keyframes fadeInUp {
+  from { 
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.name-content p {
+  opacity: 0; 
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+  &.first {
+    animation-delay: 1s;
+  }}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: rgb(0, 0, 0, 0.65);
+  padding: 2rem;
+  width: 530px;
+  height: 550px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+ 
+}
+
+form input[type=email] {
+  outline: none;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  resize: vertical;
+  background: #2d2d2d;
+  color: #fff;
+}
+
+form input[type=password] {
+  outline: none;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  resize: vertical;
+  background: #2d2d2d;
+  color: #fff;
+}
+
+form input:focus {
+  border: 1.8px solid #1877f2;
+}
+
+form h1{
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+form .login {
+  outline: none;
+  border: none;
+  background: #1877f2;
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  font-size: 1.1rem;
+  width: 100%;
+  color: #fff;
+}
+
+form .login:hover {
+  background: #0764dd;
+  cursor: pointer;
+}
+
+form a {
+  text-decoration: none;
+  text-align: left;
+  font-size: 1rem;
+  padding-bottom: 30px;
+  color: #ffffff;
+}
+form a:hover {
+  text-decoration: none;
+  color: #4285f4;
+}
+
+form hr {
+  background: #f7f7f7;
+  margin-top: 30px;
+}
+
+form p {
+  text-decoration: none;
+  text-align: left;
+  font-size: 1rem;
+  padding: 0.8rem;
+  padding-left: 0px;
+  color: #ffffff;
+}
+
+form .g-sign-in-button {
+  margin-top: 0px;
+  padding-left: ;
+  display: inline-block;
+  width: 240px;
+  height: 50px;
+  background-color: #4285f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: background-color .218s, border-color .218s, box-shadow .218s;
+}
+
+form .g-sign-in-button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.3);
+  box-shadow: 0 0 3px 3px rgba(66, 133, 244, 0.3);
+}
+
+form .g-sign-in-button:active {
+  background-color: #3367D6;
+  transition: background-color 0.2s;
+}
+
+form .g-sign-in-button .content-wrapper {
+  height: 100%;
+  width: 100%;
+  border: 1px solid transparent;
+  
+}
+
+form .g-sign-in-button img {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+}
+
+form .g-sign-in-button .logo-wrapper {
+  padding: 15px;
+  background: #fff;
+  width: 48px;
+  height: 100%;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+form .g-sign-in-button .text-container {
+  font-family: Roboto,arial,sans-serif;
+  font-weight: 500;
+  letter-spacing: .21px;
+  font-size: 16px;
+  line-height: 48px;
+  vertical-align: top;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+}
+
+/* //.........Media Query.........// */
+
+@media (max-width: 500px) {
+  html {
+    font-size: 60%;
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  form .login {
+    font-size: 1.5rem;
+  }
+
+  form a {
+    font-size: 1.5rem;
+  }
+
+  form .g-sign-in-button {
+    font-size: 1.5rem;
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  form .login {
+    font-size: 1.5rem;
+  }
+
+  form a {
+    font-size: 1.5rem;
+  }
+
+  form .g-sign-in-button {
+    font-size: 1.5rem;
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 60%;
+  }
+
+  .name-content {
+    margin: 0;
+    text-align: center;
+  }
+
+  form {
+    width: 300px;
+    height: fit-content;
+  }
+
+  form input {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  form .login {
+    font-size: 1.5rem;
+  }
+
+  form a {
+    font-size: 1.5rem;
+  }
+
+  form .g-sign-in-button {
+    font-size: 1.5rem;
+  }
+
+  .flex-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (orientation: landscape) and (max-height: 500px) {
+    .header {
+      height: 90vmax;
+    }
+  }  
+}

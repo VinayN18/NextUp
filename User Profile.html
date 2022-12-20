@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>User Profile</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href = "userprofile.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar-container">
+      <a href="#home" id="navbar-logo">NextUp</a>
+ <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+	  <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+            <ul class="navbar-menu">
+        <li class="navbar-item">
+          <a href="index.html" class="navbar-links" id="home-page">Home</a>
+        </li>
+        
+	<li class="navbar-item">
+          <a href="todo.html" class="navbar-links" id="about-page">Tasks</a>
+        </li>
+        
+        <li class="navbar-btn">
+          <a href="login.html" class="button" id="signup">Logout</a>
+        </li>
+         </ul>
+    </div>
+  </nav>
+
+<section>
+<div class="card-container">
+	
+	<img class="round" src="2.jpg" alt="user" />
+	<h3>José Mourinho</h3>
+	<h6>Rome, Italy</h6>
+	<p>"The special one"</p>
+<br>
+<input type="file" id="customFile" name="file" hidden="">
+<button type="button" class="btn1">Upload</button>
+<button type="button" class="btn2">Remove</button>
+	</div>
+  
+  <article>
+    <div class="container1">
+  <form action="/action_page.php">
+    <div class="row">
+      <h1>Personal Details</h1>
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Enter first name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Enter last name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Enter email id">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Mobile</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="mobile" name="mobile" placeholder="Enter mobile number">
+      </div>
+<div class="col-25">
+        <label for="subject">DOB</label>
+      </div>
+	<div class="col-75">
+        <input type="text" id="DOB" name="DOB" placeholder="Enter DOB">
+      </div>
+</div>
+    <br>
+    <br>
+    <div class="row">
+      <input type="submit" value="Save Changes">
+    </div>
+    </form>
+</div>
+
+ <div class="container2">
+  <form action="/action_page.php">  
+    <div class="row">
+      <h1>Change Password</h1>
+      <div class="col-25">
+        <label for="fname">Old Password</label>
+      </div>
+      <div class="col-75">
+        <input type="password" class ="form-control" placeholder="Enter old password">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">New Password</label>
+      </div>
+      <div class="col-75">
+        <input type="password" class ="form-control" placeholder="Enter new password">
+      </div>
+<div class="row">
+      <div class="col-25">
+        <label for="lname">Confirm new Password</label>
+      </div>
+      <div class="col-75">
+        <input type="password" class ="form-control" placeholder="Enter password">
+      </div>
+    </div>
+    
+    <br>
+    <br>
+    <div class="row">
+      <input type="submit" value="Change Password">
+    </div>
+  </form>
+</div>
+
+  </article>
+</section>
+
+
+
+</body>
+</html>
+
